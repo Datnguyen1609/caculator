@@ -30,6 +30,7 @@
    border-bottom: 2px solid #878686;
    height: 20px;
    width: 100%;
+   max-width: 100%;
 }
 .input-container button{
   margin-left: 10px;
@@ -55,17 +56,21 @@
   padding: 12px 14px;
   border-radius: 12px;
   width: 83%;
+  align-items: center;
+  gap: 10px;
+
 }
 .Delete{
     margin-left: auto;   
     border: none;
     background: transparent;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
 }
 .text{
-  margin-left: 5px;
+
   justify-content: center;
+  flex: 1;
 }
 .todo-item.completed{
   background: #fdfdfd;
@@ -73,4 +78,22 @@
 }
 .todo-item.completed .text {
     text-decoration: line-through;
+}
+.edit,
+.save {
+    border: none;
+    background: #ffffff;
+}
+.edit:hover{
+  background: #dcdada;
+}
+.save:hover{
+  background: #dcdada;
+}
+.Delete:hover{
+  background: #dcdada;
+}
+input {
+  border: none;
+  outline: none;
 }
